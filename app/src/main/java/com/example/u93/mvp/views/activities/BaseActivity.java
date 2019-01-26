@@ -1,12 +1,14 @@
-package com.example.u93.mvp.views;
+package com.example.u93.mvp.views.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 import com.example.u93.mvp.helper.ValidateInternet;
 import com.example.u93.mvp.presenters.BasePresenter;
+import com.example.u93.mvp.views.interfaces.IBaseView;
 
-public class BaseActivity<T extends BasePresenter> extends AppCompatActivity implements IBaseView{
+public class BaseActivity<T extends BasePresenter> extends AppCompatActivity implements IBaseView {
     private T presenter;
     private ValidateInternet validateInternet;
 
@@ -29,7 +31,7 @@ public class BaseActivity<T extends BasePresenter> extends AppCompatActivity imp
     }
 
     @Override
-    public void showAlertDialog() {
-
+    public void showResultBase(int i) {
+        Toast.makeText(this,"Resultado "+i, Toast.LENGTH_SHORT).show();
     }
 }

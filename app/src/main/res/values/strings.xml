@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">mvp</string>
+    <string name="calcular">Calcular</string>
+    <string name="calcularEdad">Calcular edad</string>
+    <string name="anhoActual">Año actual</string>
+    <string name="anhoNacimiento">Año nacimiento</string>
 </resources>

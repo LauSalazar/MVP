@@ -1,7 +1,7 @@
 package com.example.u93.mvp.presenters;
 
 import com.example.u93.mvp.helper.ValidateInternet;
-import com.example.u93.mvp.views.IBaseView;
+import com.example.u93.mvp.views.interfaces.IBaseView;
 
 public class BasePresenter<T extends IBaseView> {
 
@@ -19,5 +19,9 @@ public class BasePresenter<T extends IBaseView> {
 
     public T getView() {
         return view;
+    }
+
+    public void showResultBase(int i) {
+        getView().showResultBase(i);
     }
 }
